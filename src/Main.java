@@ -10,7 +10,7 @@ public class Main {
         System.out.println("4. HongKong");
         int num = console.nextInt();
         if(num == 1){
-            NewYork ny = new NewYork();
+            NewYork ny = new NewYork("NewYork");
             ny.Wait();
             System.out.println("Choose the drinking");
             System.out.println("1. Latte");
@@ -18,16 +18,31 @@ public class Main {
             int choice1 = console.nextInt();
             if(choice1 == 1){
                 ny.Wait();
+                System.out.println("Would you like to get the biscuits?");
+                System.out.println("1. Yes");
+                System.out.println("2. No");
+                int bis1 = console.nextInt();
+                if(bis1 == 1){
+                    ny.sellBiscuits();
+                }
                 ny.makeLatte();
             }else if(choice1 == 2){
+
                 ny.Wait();
+                System.out.println("Would you like to get the biscuits?");
+                System.out.println("1. Yes");
+                System.out.println("2. No");
+                int bis1 = console.nextInt();
+                if(bis1 == 1){
+                    ny.sellBiscuits();
+                }
                 ny.makeCappucino();
             }else{
                 ny.Wait();
                 ny.wrong();
             }
         }else if(num == 2){
-            Rome rome = new Rome();
+            Rome rome = new Rome("Rome");
             rome.Wait();
             System.out.println("Choose the drinking");
             System.out.println("1. Latte");
@@ -38,12 +53,12 @@ public class Main {
                 rome.makeLatte();
             }else if(choice2 == 2){
                 rome.Wait();
-                rome.makeCapuccino();
+                rome.makeCappucino();
             }else{
                 rome.wrong();
             }
         }else if (num == 3){
-            Paris paris = new Paris();
+            Paris paris = new Paris("Paris");
             paris.Wait();
             System.out.println("Choose the drinking");
             System.out.println("1. Latte");
@@ -51,15 +66,29 @@ public class Main {
             int choice3 = console.nextInt();
             if(choice3 == 1){
                 paris.Wait();
+                System.out.println("Would you like to get the biscuits?");
+                System.out.println("1. Yes");
+                System.out.println("2. No");
+                int bis1 = console.nextInt();
+                if(bis1 == 1){
+                    paris.sellBiscuits();
+                }
                 paris.makeLatte();
             }else if(choice3 == 2){
                 paris.Wait();
-                paris.makeCapuccino();
+                System.out.println("Would you like to get the biscuits?");
+                System.out.println("1. Yes");
+                System.out.println("2. No");
+                int bis1 = console.nextInt();
+                if(bis1 == 1){
+                    paris.sellBiscuits();
+                }
+                paris.makeCappucino();
             }else {
                 paris.wrong();
             }
         }else if (num == 4){
-            HongKong hk = new HongKong();
+            HongKong hk = new HongKong("Rome");
             hk.Wait();
             System.out.println("Choose the drinking");
             System.out.println("1. Latte");
@@ -70,7 +99,7 @@ public class Main {
                 hk.makeLatte();
             }else if(choice4 == 2){
                 hk.Wait();
-                hk.makeCapuccino();
+                hk.makeCappucino();
             }
         }else {
             System.out.println("You put wrong number");
