@@ -1,5 +1,4 @@
-import Folder.CoffeeShop;
-import Folder.SellBiscuits;
+
 
 public class Paris extends CoffeeShop implements SellBiscuits {
     public Paris(String username) {

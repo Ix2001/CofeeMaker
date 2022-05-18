@@ -11,7 +11,13 @@ public abstract class CoffeeShop {
         System.out.println("1. Yes");
         System.out.println("2. No");
     }
-
+    public void city(){
+        System.out.println("Choose the city: ");
+        System.out.println("1. New York");
+        System.out.println("2. Rome");
+        System.out.println("3. Paris");
+        System.out.println("4. HongKong");
+    }
     void chooseDrinking(){
         System.out.println("Choose the drinking");
         System.out.println("1. Latte");

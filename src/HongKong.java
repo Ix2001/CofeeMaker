@@ -1,4 +1,3 @@
-import Folder.CoffeeShop;
 
 public class HongKong extends CoffeeShop {
     public HongKong(String username) {

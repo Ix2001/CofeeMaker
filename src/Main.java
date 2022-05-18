@@ -9,14 +9,9 @@ public class Main {
         Paris paris = new Paris("Paris");
         while (true) {
             Scanner console = new Scanner(System.in);
-            System.out.println("Choose the city: "); // сократить до одной команды
-            System.out.println("1. New York");
-            System.out.println("2. Rome");
-            System.out.println("3. Paris");
-            System.out.println("4. HongKong");
+            hk.city();
             int num = console.nextInt();
             if (num == 1) {
-
                 ny.Wait();
                 ny.chooseDrinking();
                 int choice1 = console.nextInt();
